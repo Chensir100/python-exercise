@@ -8,10 +8,16 @@ while 1:
         a = 1
         card_number=int(input('请输入抽卡次数：'))
         while a <= card_number:
-            card_list.append(print(random.choice(base_list)))
+            star = random.choice(base_list)
+            print(star)
+            card_list.append(star)
             a = a + 1
         print('卡已存入背包')
     if number == 2:
         for i in card_list:
             print(i)
+    if number == 3:
+        card_list.sort()
+    if number == 4:
+        break
 
